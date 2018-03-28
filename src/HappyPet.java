@@ -62,4 +62,16 @@ public class HappyPet {
 
 		}
 	}
-}
+	static void feedPet(String wantedPet) {
+		if (wantedPet.equals("cat")) {
+			happinessLevel -= 1;
+			JOptionPane.showMessageDialog(null, "Your cat liked it and her happiness level is " + happinessLevel);
+
+		}
+
+		else if (wantedPet.equals("dog")) {
+			happinessLevel += 1;
+			JOptionPane.showMessageDialog(null, "Your dog is happy and their happiness level is " + happinessLevel);
+
+		}
+	}}
